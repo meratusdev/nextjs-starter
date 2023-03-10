@@ -6,7 +6,7 @@ import PageWrapper from "~/src/components/Layout/PageWrapper";
 const Home: NextPage = () => {
   return (
     <PageWrapper title="Meratus Dev">
-      <Heading>Hai</Heading>
+      <Heading>Meratus Dev</Heading>
     </PageWrapper>
   );
 };
