@@ -2,6 +2,10 @@
   "compilerOptions": {
     "target": "es2017",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./*"]
+    },
     "allowJs": true,
     "checkJs": true,
     "skipLibCheck": true,
@@ -16,10 +20,7 @@
     "jsx": "preserve",
     "incremental": true,
     "noUncheckedIndexedAccess": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "types": ["vitest/globals"]
   },
   "include": [
     ".eslintrc.cjs",
