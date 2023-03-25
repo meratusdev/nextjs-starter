@@ -4,10 +4,10 @@ import { createTRPCRouter, publicProcedure } from "~/src/server/api/trpc";
 
 export const exampleRouter = createTRPCRouter({
   hello: publicProcedure
-    .input(z.object({ text: z.string() }))
-    .query(({ input }) => {
+    .input(z.object({ name: z.string() }))
+    .mutation(({ input }) => {
       return {
-        greeting: `Hello ${input.text}`,
+        message: `Hello ${input.name}!`,
       };
     }),
 });
