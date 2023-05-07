@@ -61,7 +61,7 @@ pnpm run dev
 
 This will start the Next.js development server on `http://localhost:3000`.
 
-## Building and Deploying
+## Build
 
 To build the application for production, run:
 
@@ -80,6 +80,28 @@ or
 ```bash
 pnpm run build
 ```
+
+### Build with Turbo
+
+You can build the application using Turbo by running:
+
+```bash
+yarn turbo build
+```
+
+or
+
+```bash
+npm turbo build
+```
+
+or
+
+```bash
+pnpm turbo build
+```
+
+For more information on using Turbo Repo, see the [official documentation](https://turbo.build/repo/docs).
 
 ## Testing
 
